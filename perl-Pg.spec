@@ -13,7 +13,6 @@ URL:		http://gborg.postgresql.org/project/pgperl/projdisplay.php
 BuildRequires:	perl-devel
 BuildRequires:	postgresql-devel
 BuildRequires:	postgresql-libs-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 pgperl is an interface between Perl and PostgreSQL. This uses the
