@@ -1,6 +1,6 @@
 %define name	perl-Pg
 %define version 2.1.1
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary:	A libpq-based PostgreSQL interface for Perl
 Name:		%{name}
