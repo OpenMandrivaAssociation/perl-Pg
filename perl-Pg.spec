@@ -1,19 +1,17 @@
-%define name	perl-Pg
-%define version 2.1.1
-%define release %mkrel 12
+%define upstream_name Pg
+%define upstream_version 2.1.1
 
 Summary:	A libpq-based PostgreSQL interface for Perl
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	13
 License:	GPL
 Group:		Development/Perl
 Source0:	Pg-%{version}.tar.bz2
 URL:		http://gborg.postgresql.org/project/pgperl/projdisplay.php
 BuildRequires:	perl-devel
 BuildRequires:	postgresql-devel
-BuildRequires:	postgresql-libs-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+#BuildRequires:	postgresql-libs-devel
 
 %description
 pgperl is an interface between Perl and PostgreSQL. This uses the
@@ -43,14 +41,9 @@ export POSTGRES_LIB=`pg_config --libdir`
 #%{__make} test
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot} 
 %makeinstall_std
 
-%clean 
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot} 
-
 %files
-%defattr(-,root,root)
 %doc Changes README
 %{perl_vendorlib}/*/*/Pg/Pg.so
 %{perl_vendorlib}/*/*/Pg/autosplit.ix
