@@ -4,7 +4,7 @@
 Summary:	A libpq-based PostgreSQL interface for Perl
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	13
+Release:	14
 License:	GPL
 Group:		Development/Perl
 Source0:	Pg-%{version}.tar.bz2
