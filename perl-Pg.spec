@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	25
 License:	GPLv2
 Group:		Development/Perl
-Url:		http://gborg.postgresql.org/project/pgperl/projdisplay.php
+Url:		https://gborg.postgresql.org/project/pgperl/projdisplay.php
 Source0:	%{modname}-%{version}.tar.bz2
 BuildRequires:	perl-devel
 BuildRequires:	postgresql-devel
