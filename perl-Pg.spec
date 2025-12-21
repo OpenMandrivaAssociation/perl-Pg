@@ -9,6 +9,7 @@ License:	GPLv2
 Group:		Development/Perl
 Url:		https://gborg.postgresql.org/project/pgperl/projdisplay.php
 Source0:	%{modname}-%{version}.tar.bz2
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	postgresql-devel
 
