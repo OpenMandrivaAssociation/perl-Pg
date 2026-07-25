@@ -3,8 +3,8 @@
 
 Summary:	A libpq-based PostgreSQL interface for Perl
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	25
+Version:	%{modver}
+Release:	26
 License:	GPLv2
 Group:		Development/Perl
 Url:		https://gborg.postgresql.org/project/pgperl/projdisplay.php
